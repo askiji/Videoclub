@@ -1,11 +1,12 @@
 
-public class CD extends Disco{
+public class CD {
 
 	private static int queue = 20000;
 	private int id;
+
 	private String titulo;
 	private String grupoCantante;
-	private double precio;
+	private double precio=15;
 	
 	public CD(String titulo, String grupoCantante) {
 		super();
@@ -16,7 +17,7 @@ public class CD extends Disco{
 	}
 	@Override
 	public String toString() {
-		return "CD [titulo=" + titulo + ", grupoCantante=" + grupoCantante + ", precio=" + precio + "]";
+		return "CD [titulo=" + titulo + ", grupoCantante=" + grupoCantante + ", precio=" + precio +" "+ this.id + "]";
 	}
 	public double getPrecio() {
 		return precio;
@@ -35,6 +36,12 @@ public class CD extends Disco{
 	}
 	public void setGrupoCantante(String grupoCantante) {
 		this.grupoCantante = grupoCantante;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	
